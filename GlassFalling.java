@@ -5,7 +5,14 @@ public class GlassFalling {
 
   // Do not change the parameters!
   public int glassFallingRecur(int floors, int sheets) {
-    // Fill in here and change the return
+    if(floors<=0 || sheets <= 0)
+            return 0;
+        else if(floors >=1 && sheets == 1)
+            return floors;
+        else
+        {
+            return glassFallingRecur(floors/2,sheets-1);
+        }
     return 0;
   }
 
