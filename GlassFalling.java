@@ -27,7 +27,7 @@ public class GlassFalling {
 
   // Optional:
   // Pick whatever parameters you want to, just make sure to return an int.
-  public int glassFallingMemoized() {
+  public int glassFallingMemoized(int floors, int sheets) {
      int memo[][] = new int[floors+1][sheets+1];
         for(int i = 0; i<=floors; i++)
             for(int j = 0; j<=sheets; j++)
